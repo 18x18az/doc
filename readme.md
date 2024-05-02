@@ -18,6 +18,8 @@ For Ethernet we use Ethercon connectors. Ethercon is a more robust locking conne
 
 ## Primary road case
 
+![road case](https://i.imgur.com/eAGZYfE.png)
+
 To the extent possible, all equipment needed to run an event is contained in a single rack mount road case. The road case contains the following equipment:
 
 ### PC
@@ -67,6 +69,8 @@ We have patch panels on the front and back of the case for ethernet to the field
 ### Field Road Cases
 The equipment required for each field is kept in a small road case. Each case includes a raspberry pi, a flex mini ethernet switch, and the main controller portion of the legacy field control system. Ethernet cables are run from marked ethernet jacks in the road case to the two driver station control boards. An HDMI and gray PowerCon jack are present to provide video signal/power to field monitors. There are three external Ethercon jacks on the road case to allow daisy chaining of network between multiple fields. Power in is provided by a True1 connector, and a passthrough power out is also present to allow power to be daisy chained between multiple field boxes.
 
+![field boxes](https://i.imgur.com/go55ySd.png)
+
 ### Field Cameras
 
 Each field has an AViPAS AV-1280 PTZ SDI camera. We have found them to be very reliable, and the video quality is decent, but we have had issues with the autofocus. The API, while poorly documented, is very useful for controlling the cameras from software.
@@ -86,6 +90,8 @@ To convert the SDI video signal sent from the streaming PC to the HDMI used by t
 ## Cable reels
 
 All of our long cables with the exception of power cables are kept spooled on cable spools.
+
+![reel](https://i.imgur.com/GGXqQjJ.png)
 
 [The reels we use](https://www.amazon.com/Woods-82870-Snap-Together-Holds-150-Foot/dp/B001KA4P7I/ref=sr_1_14?crid=DN8442PFAY5L&dib=eyJ2IjoiMSJ9.bdjSNiPU-GvVsW2l5HHKl7v5tPm2g0S-Ng-1Qx2deDHge-_SnB74ZZq8RWz9_1iii-thWgT3EDSkvcXr7gaBGLg6G4XbGGFxsia3BwJGPjnaKoQNq1_h6EipJUs-t2rYquIQvWv9oc8ig-Sq4pZeq0iBPybwDg4R2FaTlszG9gV1_NWFGyxj2WM9DEXRhadyJgIabZAk-bU8Vr3foneeWddlkjplZ9aHE165Jzf1GaM.vwB-hiqb_bHSkQwkYWe3dtCasvdm0tPyX96EoxI-5uQ&dib_tag=se&keywords=cable+spool&qid=1714668631&sprefix=cable+spool%2Caps%2C163&sr=8-14)
 
