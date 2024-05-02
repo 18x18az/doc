@@ -108,6 +108,9 @@ In order to more effectively operate tournaments, we have developed a custom sof
 
 ## Match scheduling/queueing logic
 
+![overall](https://i.imgur.com/nR4PQzJ.png)
+*Overall UI*
+
 One of the major pieces of work done for EO was to reimagine the way qualification matches are handled. TM treats the match schedule as a list of matches in a specific order on predetermined fields, and has no concept of matches either queued next on a field, or matches that have been played but are still being on the field being scored. In our scheduling system, matches are grouped as follows
 
 - Contest - a match or group of matches (in the case of, say, Bo3) with a winner (or a tie, as is possible in qual matches)
@@ -119,6 +122,9 @@ The result of all of this is that, if match 12 is being played on Field 2 and th
 There is also the concept of an "On Field Match" and an "On Deck Match" for each field. This operates with a similar amount of flexibility to the way elims matches are placed on fields in elims in TM, but by default the system will automatically place matches on the fields that they were originally scheduled to be played on. However, if there's say an issue with a field and repairing it is taking a while, the EO operator can move matches around to avoid matches being played on the broken field as it's being repaired, and at all points the audience displays/field monitors/etc will show the matches as configured in EO.
 
 Additionally, matches are not automatically removed from the field once the match is played, instead they remain on the field until the sitting is resolved, either with a score, or by marking the match for a replay. This means that the queueing display that queuers see will show the field as "Match 5 - Scoring" until the match is actually scored, at which point they know they can send the next team onto the field because it's done being scored.
+
+![queueing display](https://i.imgur.com/qiZHSdn.png)
+*Queueing Display*
 
 Another useful concept is the idea of the "Active Match" and the "Next Match". The active match is the current match being displayed on the audience display, if any. The next match is whatever match is scheduled to be played after this match. However, while by default the system will automatically populate the active match and next match by going through match by match, the operator can easily change things around as needed. The purpose of this is to ensure that the referees have only one button, which either says "start auto", "start driver", "queue next match," or is disabled. They can always trust that they can press that button and things will continue to work. This is especially useful if, say, they need to skip a match on a field and then come back to it. The EO operator just needs to make sure that the right match is marked as "Next Match" and things will work smoothly for everybody at the event.
 
@@ -134,7 +140,13 @@ Another major area of improvement concerns checkin and inspection. EO has a cust
 
 An additional state has been added to checkin called "confirmed no show." If it is confirmed that a team will not be attending the event, the team can be marked as a no show, and they will no longer show up on the inspection summary rollups/in the checkin list/etc. This makes it easier to identify which teams you still need to determine the status of, without having to keep track of which teams you know are just not showing up.
 
+![team list](https://i.imgur.com/XaNhLQj.png)
+*Team List*
+
 The team list provides a useful filtering tool to filter teams to show just the not checked in teams/just the teams that have not passed inspection/etc. Additionally, we have a custom website accessible on the internet where we upload inspection data to, meaning that volunteers can simply go to a website on their phone to see, in real time, what teams still need to get inspected, rather than relying on a piece of paper and a clipboard and running back and forth to the team list.
+
+![filter](https://i.imgur.com/L1cG6aR.png)
+*Team Filter*
 
 ## Inegrated OBS and PTZ camera controls
 
