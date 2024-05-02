@@ -152,6 +152,9 @@ The team list provides a useful filtering tool to filter teams to show just the 
 
 The software has built in controls for OBS and the PTZ cameras. The software can be configured with scene names in OBS and the IP addresses of the PTZ cameras to synchronize tournament operations, OBS scene switching, and PTZ control. In the most basic example, each field is linked to a specific OBS scene and a specific PTZ preset. When a match is about to be the active match, it will automatically set the OBS preview scene to that field's scene, and call the PTZ camera preset for that field. Then, when the referee hits the queue match button, it will call a scene transition. Only once the scene transition has been completed and the field is being shown on the stream can the referee press the button to start the match. After the match, the scene is automatically transitioned to the results display. Only after the scene has transitioned to the results display can the referee hit the button to queue the next match. This all ensures that OBS is always showing the right view and that matches aren't being started before they're being shown.
 
+![display control](https://i.imgur.com/D1kooKe.png)
+*display control*
+
 A more compicated example comes in the case of, say, the award ceremony. For awards we use the following script
 
 - Show presenter
