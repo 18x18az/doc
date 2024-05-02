@@ -8,12 +8,16 @@
 
 We have attempted to use ruggedized professional grade cables and connectors rather than consumer grade systems wherever possible.
 
+### Video - SDI
 For video transmission over long distances, we use SDI, and have found it to be incredibly reliable. We have tried other long-distance video transmission systems in the past such as HdBaseT and USB over Cat5 and have found them to be unreliable. NDI appears to be gaining wider adoption in professional use, and will likely become the dominant standard in the future, but this has the drawback of requiring a more robust network setup and also appears to require more expensive associated equipment. For conversion between SDI and HDMI we have used Black Magic converters and have found them to be very reliable and at a reasonable price point.
 
+### Audio - XLR
 For audio transmission we use XLR. We also have a box of miscellaneous adapter cables to convert that audio signal to 3.5mm/RCA/etc as needed to work with venue audio.
 
+### Power - PowerCon
 For power cables we have moved from traditional extension cables to using a PowerCon True1 based system. This has the advantage of being a more robust locking connector, being easily distinguishable from extension cords owned by the venue, and ensuring that only people familiar with the setup are setting up power cables, avoiding possible issues with unsafe amounts of current draw over long runs of cable/excessive daisy chaining, etc. This also makes our cables a much more known quantity since the cables stock used to make the cables was selected specifically for worst-case scenarios for our use case considering load and run length, especially compared with cables on unknown quality provided by the venue. For power to field monitors/our projector, we use PowerCon gray to IEC cables. This also has the advantage of ensuring that we do not have any easily accessible standard outlet plugs that somebody may plug an unknown device into.
 
+### Networking - Ethercon
 For Ethernet we use Ethercon connectors. Ethercon is a more robust locking connector for ethernet cables. We made this change due to the retaining clips on our ethernet cables frequently getting destroyed during setup/teardown/transit.
 
 ## Primary road case
@@ -25,7 +29,7 @@ To the extent possible, all equipment needed to run an event is contained in a s
 ### PC
 The primary streaming/operation PC. The PC has a mid range Ryzen processor from several years ago along with a very basic graphics card necessary for stream encoding. We have not found any compelling need for a high performance computer for 1080p streaming and the other relatively lightweight tasks the computer is used for.
 
-The one specialized component to note about the streaming PC is the SDI input/output card. We use a DeckLink Quad 2 8 channel card. The card itself is very reliable and the driver supports Linux, although the driver cannot be used with the Flatpak of OBS on Linux which required us to manually build OBS from source in order to use it. However, the overall integration into OBS is very good, one of the beat features is the ability to send the program feed from OBS to the card as an SDI output, rather than needing to have the projector be driven by an HDMI output from the graphics card, which can sometimes have issues with windows being dragged onto the projector screen/etc. One of the biggest issues with this card is that it only suports "Level B" SDI input, which means that while our field cameras can send 1080p60 video over SDI, because they send it via Level A, we have to use 1080p30 output instead.
+The one specialized component to note about the streaming PC is the SDI input/output card. We use a DeckLink Quad 2 8 channel card. The card itself is very reliable and the driver supports Linux, although the driver cannot be used with the Flatpak of OBS on Linux which required us to manually build OBS from source in order to use it. However, the overall integration into OBS is very good, one of the best features is the ability to send the program feed from OBS to the card as an SDI output, rather than needing to have the projector be driven by an HDMI output from the graphics card, which can sometimes have issues with windows being dragged onto the projector screen/etc. One of the biggest issues with this card is that it only suports "Level B" SDI input, which means that while our field cameras can send 1080p60 video over SDI, because they send it via Level A, we have to use 1080p30 output instead.
 
 We have the following SDI inputs:
 - Field camera x 3
