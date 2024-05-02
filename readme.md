@@ -170,6 +170,16 @@ A more compicated example comes in the case of, say, the award ceremony. For awa
 
 This is unworklable with a small team if you need to control the cameras, control OBS, and control the TM overlays in different windows. Instead we we have the same display with a series of named presets so we can simply click the "audience shot" button when we need to get the audience shot ready, making everything much easier to manage
 
+## Aesthetic improvements
+
+Aesthetics are ultimately highly subjective, but great care was put into the design of the UI elements
+
+![in match](https://i.imgur.com/b0n0d0b.png)
+
+![results](https://i.imgur.com/9KZ7aOb.png)
+
+![bracket](https://i.imgur.com/HXghoOD.png)
+
 ## Ease of use
 
 Our system is just a series of webpages, meaning that there's no app to install. If it can run a web browser, it can work as a display or as a user interface.
